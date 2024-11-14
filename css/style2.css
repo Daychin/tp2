@@ -1,0 +1,166 @@
+.PageKB2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 58px 725px 159px;
+    margin: auto;
+    grid-template-areas:
+
+        "header header header"
+        "main main main"
+        "footer footer footer"
+    ;
+    border-collapse: collapse;
+    border: 2px solid black;
+    max-width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(black, gray);
+
+}
+
+
+body>* {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.header {
+    grid-area: header;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "nav1 nav1 nav1 rien rien rien nav2 nav2";
+
+}
+
+.PremierNav {
+    display: inline-block;
+    color: white;
+    padding: 1em;
+    grid-area: nav1;
+}
+
+
+.DeuxiemeNav {
+    text-align: right;
+    display: inline-block;
+    color: white;
+    padding: 1em;
+    grid-area: nav2;
+}
+
+.header span {
+    padding: 6px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+
+        "image1 text1 text1"
+        "image2 text2 text2"
+    ;
+    background-color: white;
+}
+
+.image1 {
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 400px;
+    opacity: 0.5;
+    border-radius: 24%;
+
+}
+
+img {
+    border-radius: 25%;
+}
+
+.image1:hover {
+    opacity: 1.0;
+}
+
+#imageFallout {
+    grid-area: image1;
+
+}
+
+#imageWow {
+    grid-area: image2;
+}
+
+.paragraphe1 {
+    grid-area: text1;
+    font-size: x-large;
+    padding: 2em;
+}
+
+.paragraphe2 {
+    grid-area: text2;
+    font-size: x-large;
+    padding: 2em;
+}
+
+div.image1:hover {
+    border: 1px solid black;
+}
+
+div.image1 img {
+    width: 100%;
+    height: auto;
+}
+
+div.discription {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+footer {
+    grid-area: footer;
+    background-color: darkgrey;
+    text-align: left;
+    font-size: small;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+    grid-template-rows: 15px;
+    grid-template-areas:
+        "foot1 rien foot2"
+        "foot3 rien foot2"
+        "foot4 rien foot2";
+
+}
+
+.nom {
+    grid-area: foot2;
+}
+
+.foot1 {
+
+    grid-area: foot1;
+}
+
+.foot2 {
+
+    grid-area: foot3;
+}
+
+.foot3 {
+
+    grid-area: foot4;
+}
+
+a:hover {
+    color: blue;
+}
+
+a {
+    color: white;
+    font-size: larger;
+
+}

@@ -1,0 +1,138 @@
+.toutLePage {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin: auto;
+   grid-template-areas:
+
+      "header header header"
+      "main main aside"
+      "footer footer footer"
+   ;
+   border-collapse: collapse;
+   border: 2px solid black;
+   max-width: 80%;
+   font-family:'Times New Roman', Times, serif
+
+}
+
+.toutLePage>* {
+   border-collapse: collapse;
+   border: 2px solid black;
+}
+.kb2>* {
+   border-collapse: collapse;
+   border: 2px solid black;
+}
+
+.header {
+   grid-area: header;
+   background-color: black;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-areas:
+      "nav1 nav1 nav1 rien rien rien nav2 nav2";
+
+}
+
+.PremierNav {
+   display: inline-block;
+   color: white;
+   padding: 1em;
+   grid-area: nav1;
+}
+
+.DeuxiemeNav {
+   text-align: right;
+   display: inline-block;
+   color: white;
+   padding: 1em;
+   grid-area: nav2;
+}
+
+.header span {
+   padding: 6px;
+}
+
+.main {
+   grid-area: main;
+   padding: 1em;
+}
+
+img {
+   max-width: 350px;
+   margin: auto;
+}
+
+figure {
+   background-color: white;
+   border: solid black 1px;
+   padding: 1em;
+   width: fit-content;
+   float: left;
+}
+
+
+.aside {
+   grid-area: aside;
+   background-color: cornflowerblue;
+   padding: 1em;
+}
+
+.footer {
+   grid-area: footer;
+   background-color: darkgrey;
+   text-align: left;
+   font-size: small;
+   padding: 10px;
+   display: grid;
+   grid-template-columns: 130px 1fr 130px;
+   grid-template-rows: 15px;
+   grid-template-areas:
+      "foot1 rien foot2"
+      "foot3 rien foot2"
+      "foot4 rien foot2";
+
+}
+
+.nom {
+   grid-area: foot2;
+}
+
+.foot1 {
+
+   grid-area: foot1;
+}
+
+.foot2 {
+
+   grid-area: foot3;
+}
+
+.foot3 {
+
+   grid-area: foot4;
+}
+
+a:hover{
+   color: blue;
+}
+a {
+   color: white;
+   font-size: larger;
+
+}
+
+.PourA {
+   color: blue;
+   font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
